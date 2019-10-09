@@ -42,7 +42,7 @@ function drillThree() {
     console.log(isBalanced(alphaTree))
 }
 
-drillThree()
+//drillThree()
 
 // assignment 4. recursively prints the tree 
 
@@ -101,3 +101,24 @@ function isBalanced(root){
 }
 
 // Assignment 9. ???
+
+
+//Searching
+
+function searching(){
+
+  const tree = new BST()
+
+  const arr = [25, 15, 50, 10, 24, 35, 70, 4, 12, 18, 31, 44, 66, 90, 22]
+
+  for(let i = 0; i < arr.length; i++) {
+    tree.insert(arr[i], arr[i])
+  }
+
+  console.log(tree.inOrder())
+  console.log(tree.preOrder())
+  // console.log(tree.postOrder())
+  // console.log(tree.bfs(tree))
+
+}
+searching()
